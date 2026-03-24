@@ -1,4 +1,8 @@
 // TEMPLATE
+
+//YOU CAN COPY THIS TEMPLATE AND CUSTOMIZE IT TO YOUR LIKING FOR EACH DAY'S ENTRY. JUST MAKE SURE TO UPDATE THE FILENAME TO MATCH THE DATE (e.g., day.2026-03-16.tsx) AND FILL IN THE SECTIONS BELOW WITH YOUR CONTENT.
+
+
 import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 

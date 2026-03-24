@@ -18,9 +18,11 @@ interface CalendarDay {
 function CalendarGrid({
   title,
   days,
+  editedDates = new Set<string>(),
 }: {
   title: string;
   days: CalendarDay[];
+  editedDates?: Set<string>;
 }) {
   const formatDate = (date: Date) => {
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -56,17 +58,21 @@ function CalendarGrid({
           }
 
           const dateStr = formatDate(dayObj.date);
+          const hasEdits = editedDates.has(dateStr);
           //how routing works: the [date] part of the route will match this dateStr and render the corresponding day page
           return (
             <Link
               key={dateStr}
               to={`/day/${dateStr}`}
-              className={`p-4 rounded-lg transition-all duration-300 cursor-pointer aspect-square flex flex-col items-center justify-center ${
+              className={`p-4 rounded-lg transition-all duration-300 cursor-pointer aspect-square flex flex-col items-center justify-center relative ${
                 dayObj.isSynthesis
                   ? 'bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-lg hover:shadow-xl hover:scale-105'
                   : 'bg-gradient-to-br from-green-100 to-emerald-100 text-green-800 shadow hover:shadow-lg hover:scale-105'
               }`}
             >
+              {hasEdits && (
+                <div className="absolute top-1 right-1 text-lg">🌳</div>
+              )}
               <div className="flex flex-col items-center gap-1">
                 <div className="text-3xl font-bold">{dayObj.day}</div>
                 {dayObj.isSynthesis && (
@@ -84,6 +90,12 @@ function CalendarGrid({
 }
 
 export default function Home() {
+  // Days that have been edited by developers
+  const editedDates = new Set<string>([
+    '2026-03-16',
+    '2026-03-17',
+  ]);
+
   // Generate March days (March 16-31, 2026)
   const marchDays: CalendarDay[] = [];
 
@@ -143,12 +155,12 @@ export default function Home() {
 
       {/* March Calendar */}
       <div className="max-w-6xl mx-auto mb-12">
-        <CalendarGrid title="March 2026" days={marchDays} />
+        <CalendarGrid title="March 2026" days={marchDays} editedDates={editedDates} />
       </div>
 
       {/* April Calendar */}
       <div className="max-w-6xl mx-auto mb-12">
-        <CalendarGrid title="April 2026" days={aprilDays} />
+        <CalendarGrid title="April 2026" days={aprilDays} editedDates={editedDates} />
       </div>
 
       {/* Info Section */}
