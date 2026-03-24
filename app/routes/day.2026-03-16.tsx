@@ -1,4 +1,5 @@
 //SAMPLE ENTRY FOR MARCH 16, 2026
+
 import { Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 
