@@ -150,34 +150,41 @@ export default function DayPage() {
         {/* SECTION 5: Key Metrics / Notes */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
-            📊 Additional Information
+            📊 Short Reflection
           </h2>
 
           <div className="space-y-4">
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Time Spent</h3>
-              <p className="text-gray-800">Total: 7 hours</p>
-              <p className="text-gray-600 text-sm">Calendar Implementation: 4 hours | Route System: 2 hours | Testing & Debug: 1 hour</p>
+              <h3 className="font-semibold text-green-800 mb-2">Environmental Stewardship</h3>
+              <p className="text-gray-800">
+                Being a steward of the environment means taking responsibility for the spaces we live in and the world around us. 
+                Today's small action of cleaning up trash in the classroom reminds us that environmental care is not about grand gestures, but rather
+                it's about consistent, mindful choices in our daily lives.
+              </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Features Completed</h3>
+              <h3 className="font-semibold text-green-800 mb-2">Key Reflections</h3>
               <ul className="list-disc list-inside text-gray-800 space-y-1">
-                <li>✅ Calendar Grid (7 columns, Monday-first)</li>
-                <li>✅ Synthesis Day Detection (Saturdays)</li>
-                <li>✅ Dynamic Routing System</li>
-                <li>✅ Responsive Design</li>
+                <li>Small actions can have a big impact</li>
+                <li>Environmental responsibility is everyone's duty</li>
+                <li>Setting a positive example influences others</li>
+                <li>Clean spaces foster positive learning environments</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Issues Resolved</h3>
-              <p className="text-gray-800">Fixed TypeScript baseUrl deprecation warning by removing deprecated option.</p>
+              <h3 className="font-semibold text-green-800 mb-2">Personal Growth</h3>
+              <p className="text-gray-800">
+                Caring, whether big or small, shape our future. If we don't care now, who will?
+              </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Code Quality</h3>
-              <p className="text-gray-800">✅ All TypeScript checks passing | ✅ Component properly typed | ✅ Tailwind CSS optimized</p>
+              <h3 className="font-semibold text-green-800 mb-2">Future Commitment</h3>
+              <p className="text-gray-800">
+                ✅ Continue daily environmental actions | ✅ Inspire others through example | ✅ Seek larger impact opportunities | ✅ Build sustainable habits
+              </p>
             </div>
           </div>
         </div>
