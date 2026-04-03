@@ -140,7 +140,7 @@ export default function DayPage() {
               <div className="bg-gray-800 p-8 rounded-lg h-64 flex items-center justify-center text-gray-400">
                 <div className="text-center">
                   <span className="text-6xl block mb-4">▶️</span>
-                  <p>Video: Calendar Feature Demo (8 mins)</p>
+                  <p>Video: No video for this day</p>
                 </div>
               </div>
             </div>
