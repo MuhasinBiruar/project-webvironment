@@ -51,6 +51,21 @@ export default function DayPage() {
         </Link>
         <h1 className="text-4xl font-bold mb-2">📝 Daily Entry</h1>
         <p className="text-xl text-green-100">Tuesday, March 17, 2026</p>
+        {/* Navigation */}
+        <div className="flex gap-4 justify-between p-2">
+          <Link
+            to="/day/2026-03-16"
+            className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
+          >
+            ← Previous Day
+          </Link>
+          <Link
+            to="/day/2026-03-18"
+            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
+          >
+            Next Day →
+          </Link>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto p-8">
@@ -165,22 +180,6 @@ export default function DayPage() {
               <p className="text-gray-800">✅ All TypeScript checks passing | ✅ Component properly typed | ✅ Tailwind CSS optimized</p>
             </div>
           </div>
-        </div>
-
-        {/* Navigation */}
-        <div className="flex gap-4 justify-between">
-          <Link
-            to="/day/2026-03-16"
-            className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
-          >
-            ← Previous Day
-          </Link>
-          <Link
-            to="/"
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
-          >
-            Back to Calendar
-          </Link>
         </div>
       </div>
     </div>

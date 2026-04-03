@@ -3,7 +3,7 @@
 import { Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
     { title: 'March 16, 2026 - WebVironment' },
     { name: 'description', content: 'Development entry for March 16, 2026' },
@@ -23,6 +23,21 @@ export default function DayPage() {
         </Link>
         <h1 className="text-4xl font-bold mb-2">📝 Daily Entry</h1>
         <p className="text-xl text-green-100">Monday, March 16, 2026</p>
+        {/* Navigation */}
+        <div className="flex gap-4 justify-between p-2">
+          <Link
+            to="/"
+            className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
+          >
+            ← Back to Calendar
+          </Link>
+          <Link
+            to="/day/2026-03-17"
+            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
+          >
+            Next Day →
+          </Link>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto p-8">
@@ -31,7 +46,7 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             Action Description
           </h2>
-          
+
           <div className="prose prose-green max-w-none">
             <p className="text-gray-800 mb-4">
               Today we kicked off the WebVironment project! Started by setting up the React Router framework and establishing the core project structure.
@@ -57,7 +72,7 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             👥 Developers Involved
           </h2>
-          
+
           <ul className="space-y-2">
             <li className="text-gray-800 font-semibold">Muhsin Biruar</li>
             <li className="text-gray-800 font-semibold">Cyril Santos</li>
@@ -70,7 +85,7 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             🖼️ Images
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <figure>
               <div className="bg-gradient-to-br from-green-200 to-emerald-200 p-8 rounded-lg h-40 flex items-center justify-center">
@@ -92,7 +107,7 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             🎥 Videos
           </h2>
-          
+
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold text-green-800 mb-3">Project Demo Overview</h3>
@@ -111,14 +126,14 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             📊 Additional Information
           </h2>
-          
+
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold text-green-800 mb-2">Time Spent</h3>
               <p className="text-gray-800">Total: 8 hours</p>
               <p className="text-gray-600 text-sm">Setup & Configuration: 3 hours | Design: 2 hours | Development: 3 hours</p>
             </div>
-            
+
             <div>
               <h3 className="font-semibold text-green-800 mb-2">Repository</h3>
               <p className="text-blue-600">
@@ -135,21 +150,7 @@ export default function DayPage() {
           </div>
         </div>
 
-        {/* Navigation */}
-        <div className="flex gap-4 justify-between">
-          <Link
-            to="/"
-            className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
-          >
-            ← Back to Calendar
-          </Link>
-          <Link
-            to="/day/2026-03-17"
-            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
-          >
-            Next Day →
-          </Link>
-        </div>
+
       </div>
     </div>
   );
