@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import { Sidebar } from 'primereact/sidebar';
 import { Button } from 'primereact/button';
-import 'primereact/resources/themes/lara-light-green/theme.css';
-import 'primereact/resources/primereact.css';
 
 export default function SideBar() {
     const [visible, setVisible] = useState<boolean>(false);
@@ -11,7 +9,7 @@ export default function SideBar() {
     return (
         <>
             <Sidebar visible={visible} onHide={() => setVisible(false)}>
-                <h2>Sidebar</h2>
+                <h2 className="font-bold">Informations</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

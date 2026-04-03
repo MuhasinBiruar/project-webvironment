@@ -7,7 +7,8 @@ import {
   ScrollRestoration,
 } from 'react-router';
 import SideBar from './components/common/sidebar';
-
+import React from 'react'; 
+import { ScrollTop } from 'primereact/scrolltop';
 import type { Route } from './+types/root';
 import './app.css';
 import 'primereact/resources/themes/lara-light-green/theme.css';
@@ -38,6 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         
         {children}
+        <ScrollTop />
         <SideBar />
         <ScrollRestoration />
         <Scripts />
