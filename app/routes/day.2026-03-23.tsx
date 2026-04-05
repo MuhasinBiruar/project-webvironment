@@ -2,7 +2,7 @@
 
 import { Link } from 'react-router';
 import { Image } from 'primereact/image';
-import img1 from '../images/2026-03-23/1.jpg';
+import img1 from '~/images/2026-03-23/1.jpg';
 import { addDates } from '~/util/addDates';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
