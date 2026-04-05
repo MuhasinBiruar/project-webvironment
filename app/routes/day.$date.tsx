@@ -4,18 +4,26 @@
 // JUST MAKE SURE TO UPDATE THE FILENAME TO MATCH THE DATE (e.g., day.2026-03-16.tsx)
 // AND FILL IN THE SECTIONS BELOW WITH YOUR CONTENT.
 
-import { Link } from 'react-router';
+import { useParams, Link } from 'react-router';
+import type { Route } from './+types/day.$date';
+import { addDates } from '~/util/addDates';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
 
-export function meta() {
+export function meta({ params }: Route.MetaArgs) {
   return [
-    { title: `Day ${fileDate} - WebVironment` },
-    { name: 'description', content: `Development entry for ${fileDate}` },
+    { title: `Day ${fileDate || params.date} - WebVironment` },
+    {
+      name: 'description',
+      content: `Development entry for ${fileDate || params.date}`,
+    },
   ];
 }
 
 export default function DayPage() {
+  const params = useParams<{ date: string }>();
+  const dateStr = fileDate || params.date || '';
+
   function isSynthesisDay(dateStr: string): boolean {
     const date = new Date(dateStr);
     return date.getDay() === 6; // Saturday
@@ -32,7 +40,7 @@ export default function DayPage() {
     return date.toLocaleDateString('en-US', options);
   };
 
-  const synthesis = isSynthesisDay(fileDate);
+  const synthesis = isSynthesisDay(dateStr);
 
   return (
     <div className="min-h-screen bg-linear-to-br from-green-50 to-emerald-50">
@@ -47,7 +55,22 @@ export default function DayPage() {
         <h1 className="text-4xl font-bold mb-2">
           {synthesis ? '🔄 Synthesis Day' : '📝 Daily Entry'}
         </h1>
-        <p className="text-xl text-green-100">{formatDateDisplay(fileDate)}</p>
+        <p className="text-xl text-green-100">{formatDateDisplay(dateStr)}</p>
+        {/* Navigation */}
+        <div className="flex gap-4 justify-between p-2">
+          <Link
+            to={`/day/${addDates(dateStr, -1)}`}
+            className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
+          >
+            ← Previous Day
+          </Link>
+          <Link
+            to={`/day/${addDates(dateStr, 1)}`}
+            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
+          >
+            Next Day →
+          </Link>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto p-8">
