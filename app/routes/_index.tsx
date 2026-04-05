@@ -66,8 +66,8 @@ function CalendarGrid({
               to={`/day/${dateStr}`}
               className={`p-4 rounded-lg transition-all duration-300 cursor-pointer aspect-square flex flex-col items-center justify-center relative ${
                 dayObj.isSynthesis
-                  ? 'bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-lg hover:shadow-xl hover:scale-105'
-                  : 'bg-gradient-to-br from-green-100 to-emerald-100 text-green-800 shadow hover:shadow-lg hover:scale-105'
+                  ? 'bg-linear-to-br from-green-500 to-emerald-600 text-white shadow-lg hover:shadow-xl hover:scale-105'
+                  : 'bg-linear-to-br from-green-100 to-emerald-100 text-green-800 shadow hover:shadow-lg hover:scale-105'
               }`}
             >
               {hasEdits && (
@@ -142,7 +142,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 p-8">
+    <div className="min-h-screen bg-linear-to-br from-green-50 to-emerald-50 p-8">
       {/* Header */}
       <div className="max-w-6xl mx-auto mb-12">
         <h1 className="text-6xl font-bold text-green-800 mb-2">

@@ -12,9 +12,9 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function DayPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50">
+    <div className="min-h-screen bg-linear-to-br from-green-50 to-emerald-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-8 shadow-lg">
+      <div className="bg-linear-to-r from-green-600 to-emerald-600 text-white p-8 shadow-lg">
         <Link
           to="/"
           className="inline-block mb-4 text-green-100 hover:text-white transition"
@@ -88,13 +88,13 @@ export default function DayPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <figure>
-              <div className="bg-gradient-to-br from-green-200 to-emerald-200 p-8 rounded-lg h-40 flex items-center justify-center">
+              <div className="bg-linear-to-br from-green-200 to-emerald-200 p-8 rounded-lg h-40 flex items-center justify-center">
                 <span className="text-4xl">📋</span>
               </div>
               <figcaption className="text-sm text-gray-600 mt-3">Project Planning Board - Initial Sprint Setup</figcaption>
             </figure>
             <figure>
-              <div className="bg-gradient-to-br from-blue-200 to-cyan-200 p-8 rounded-lg h-40 flex items-center justify-center">
+              <div className="bg-linear-to-br from-blue-200 to-cyan-200 p-8 rounded-lg h-40 flex items-center justify-center">
                 <span className="text-4xl">🎨</span>
               </div>
               <figcaption className="text-sm text-gray-600 mt-3">UI/UX Design Mockup - Calendar Layout</figcaption>

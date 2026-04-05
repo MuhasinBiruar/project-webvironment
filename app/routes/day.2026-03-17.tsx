@@ -35,14 +35,14 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function DayPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50">
+    <div className="min-h-screen bg-linear-to-br from-green-50 to-emerald-50">
       <style>{`
         .p-image-mask {
           background-color: rgba(0, 0, 0, 0.95) !important;
         }
       `}</style>
       {/* Header */}
-      <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-8 shadow-lg">
+      <div className="bg-linear-to-r from-green-600 to-emerald-600 text-white p-8 shadow-lg">
         <Link
           to="/"
           className="inline-block mb-4 text-green-100 hover:text-white transition"
