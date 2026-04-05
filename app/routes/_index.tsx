@@ -90,11 +90,13 @@ function CalendarGrid({
 }
 
 export default function Home() {
+  const modules = import.meta.glob('./day.*.tsx');
   // Days that have been edited by developers
-  const editedDates = new Set<string>([
-    '2026-03-16',
-    '2026-03-17',
-  ]);
+  const editedDates = new Set(
+    Object.keys(modules)
+      .map((path) => path.match(/\d{4}-\d{2}-\d{2}/)?.[0] || '')
+      .filter(Boolean),
+  );
 
   // Generate March days (March 16-31, 2026)
   const marchDays: CalendarDay[] = [];
@@ -119,8 +121,7 @@ export default function Home() {
 
   // Add empty cells before April 1 (if needed)
   // 0=Sun (skip Sun slot), 1=Mon (0 empty), 2=Tue (1 empty), etc.
-  const emptyBefore =
-    april1DayOfWeek === 0 ? 6 : april1DayOfWeek - 1;
+  const emptyBefore = april1DayOfWeek === 0 ? 6 : april1DayOfWeek - 1;
   for (let i = 0; i < emptyBefore; i++) {
     aprilDays.push({
       date: new Date(),
@@ -155,12 +156,20 @@ export default function Home() {
 
       {/* March Calendar */}
       <div className="max-w-6xl mx-auto mb-12">
-        <CalendarGrid title="March 2026" days={marchDays} editedDates={editedDates} />
+        <CalendarGrid
+          title="March 2026"
+          days={marchDays}
+          editedDates={editedDates}
+        />
       </div>
 
       {/* April Calendar */}
       <div className="max-w-6xl mx-auto mb-12">
-        <CalendarGrid title="April 2026" days={aprilDays} editedDates={editedDates} />
+        <CalendarGrid
+          title="April 2026"
+          days={aprilDays}
+          editedDates={editedDates}
+        />
       </div>
 
       {/* Info Section */}
@@ -169,7 +178,8 @@ export default function Home() {
           <div className="w-4 h-4 rounded bg-green-500 mb-3"></div>
           <h3 className="font-semibold text-green-800 mb-2">Daily Entry</h3>
           <p className="text-sm text-gray-600">
-            Click on any day to document your work with images, videos, and descriptions
+            Click on any day to document your work with images, videos, and
+            descriptions
           </p>
         </div>
         <div className="bg-white rounded-lg p-6 shadow">
