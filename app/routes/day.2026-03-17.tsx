@@ -51,6 +51,21 @@ export default function DayPage() {
         </Link>
         <h1 className="text-4xl font-bold mb-2">📝 Daily Entry</h1>
         <p className="text-xl text-green-100">Tuesday, March 17, 2026</p>
+        {/* Navigation */}
+        <div className="flex gap-4 justify-between p-2">
+          <Link
+            to="/day/2026-03-16"
+            className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
+          >
+            ← Previous Day
+          </Link>
+          <Link
+            to="/day/2026-03-18"
+            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
+          >
+            Next Day →
+          </Link>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto p-8">
@@ -125,7 +140,7 @@ export default function DayPage() {
               <div className="bg-gray-800 p-8 rounded-lg h-64 flex items-center justify-center text-gray-400">
                 <div className="text-center">
                   <span className="text-6xl block mb-4">▶️</span>
-                  <p>Video: Calendar Feature Demo (8 mins)</p>
+                  <p>Video: No video for this day</p>
                 </div>
               </div>
             </div>
@@ -135,52 +150,43 @@ export default function DayPage() {
         {/* SECTION 5: Key Metrics / Notes */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
-            📊 Additional Information
+            📊 Short Reflection
           </h2>
 
           <div className="space-y-4">
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Time Spent</h3>
-              <p className="text-gray-800">Total: 7 hours</p>
-              <p className="text-gray-600 text-sm">Calendar Implementation: 4 hours | Route System: 2 hours | Testing & Debug: 1 hour</p>
+              <h3 className="font-semibold text-green-800 mb-2">Environmental Stewardship</h3>
+              <p className="text-gray-800">
+                Being a steward of the environment means taking responsibility for the spaces we live in and the world around us. 
+                Today's small action of cleaning up trash in the classroom reminds us that environmental care is not about grand gestures, but rather
+                it's about consistent, mindful choices in our daily lives.
+              </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Features Completed</h3>
+              <h3 className="font-semibold text-green-800 mb-2">Key Reflections</h3>
               <ul className="list-disc list-inside text-gray-800 space-y-1">
-                <li>✅ Calendar Grid (7 columns, Monday-first)</li>
-                <li>✅ Synthesis Day Detection (Saturdays)</li>
-                <li>✅ Dynamic Routing System</li>
-                <li>✅ Responsive Design</li>
+                <li>Small actions can have a big impact</li>
+                <li>Environmental responsibility is everyone's duty</li>
+                <li>Setting a positive example influences others</li>
+                <li>Clean spaces foster positive learning environments</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Issues Resolved</h3>
-              <p className="text-gray-800">Fixed TypeScript baseUrl deprecation warning by removing deprecated option.</p>
+              <h3 className="font-semibold text-green-800 mb-2">Personal Growth</h3>
+              <p className="text-gray-800">
+                Caring, whether big or small, shape our future. If we don't care now, who will?
+              </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-green-800 mb-2">Code Quality</h3>
-              <p className="text-gray-800">✅ All TypeScript checks passing | ✅ Component properly typed | ✅ Tailwind CSS optimized</p>
+              <h3 className="font-semibold text-green-800 mb-2">Future Commitment</h3>
+              <p className="text-gray-800">
+                ✅ Continue daily environmental actions | ✅ Inspire others through example | ✅ Seek larger impact opportunities | ✅ Build sustainable habits
+              </p>
             </div>
           </div>
-        </div>
-
-        {/* Navigation */}
-        <div className="flex gap-4 justify-between">
-          <Link
-            to="/day/2026-03-16"
-            className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
-          >
-            ← Previous Day
-          </Link>
-          <Link
-            to="/"
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
-          >
-            Back to Calendar
-          </Link>
         </div>
       </div>
     </div>
