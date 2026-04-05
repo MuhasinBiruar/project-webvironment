@@ -4,8 +4,7 @@
 // JUST MAKE SURE TO UPDATE THE FILENAME TO MATCH THE DATE (e.g., day.2026-03-16.tsx)
 // AND FILL IN THE SECTIONS BELOW WITH YOUR CONTENT.
 
-import { useParams, Link } from 'react-router';
-import type { Route } from './+types/day.$date';
+import { Link } from 'react-router';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
 
