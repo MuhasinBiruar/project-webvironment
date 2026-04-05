@@ -211,14 +211,6 @@ export default function DayPage() {
           </div>
         </div>
 
-        {/* Info Banner */}
-        <div className="bg-green-50 border-2 border-green-200 rounded-lg p-4 text-center">
-          <p className="text-green-800 text-sm">
-            ✏️ <strong>Edit this file directly:</strong> Replace the
-            placeholders above with your own content. No UI forms needed!
-          </p>
-        </div>
-
         {/* ===== EDIT ABOVE THIS LINE ===== */}
       </div>
     </div>
