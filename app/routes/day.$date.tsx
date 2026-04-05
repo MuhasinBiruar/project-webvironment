@@ -1,22 +1,22 @@
 // TEMPLATE
 
-//YOU CAN COPY THIS TEMPLATE AND CUSTOMIZE IT TO YOUR LIKING FOR EACH DAY'S ENTRY. JUST MAKE SURE TO UPDATE THE FILENAME TO MATCH THE DATE (e.g., day.2026-03-16.tsx) AND FILL IN THE SECTIONS BELOW WITH YOUR CONTENT.
-
+// COPY THIS TEMPLATE AND CUSTOMIZE IT TO YOUR LIKING FOR EACH DAY'S ENTRY.
+// JUST MAKE SURE TO UPDATE THE FILENAME TO MATCH THE DATE (e.g., day.2026-03-16.tsx)
+// AND FILL IN THE SECTIONS BELOW WITH YOUR CONTENT.
 
 import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 
-export function meta({ params }: Route.MetaArgs) {
+const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
+
+export function meta() {
   return [
-    { title: `Day ${params.date} - WebVironment` },
-    { name: 'description', content: `Development entry for ${params.date}` },
+    { title: `Day ${fileDate} - WebVironment` },
+    { name: 'description', content: `Development entry for ${fileDate}` },
   ];
 }
 
 export default function DayPage() {
-  const params = useParams<{ date: string }>();
-  const dateStr = params.date || '';
-
   function isSynthesisDay(dateStr: string): boolean {
     const date = new Date(dateStr);
     return date.getDay() === 6; // Saturday
@@ -33,7 +33,7 @@ export default function DayPage() {
     return date.toLocaleDateString('en-US', options);
   };
 
-  const synthesis = isSynthesisDay(dateStr);
+  const synthesis = isSynthesisDay(fileDate);
 
   return (
     <div className="min-h-screen bg-linear-to-br from-green-50 to-emerald-50">
@@ -48,7 +48,7 @@ export default function DayPage() {
         <h1 className="text-4xl font-bold mb-2">
           {synthesis ? '🔄 Synthesis Day' : '📝 Daily Entry'}
         </h1>
-        <p className="text-xl text-green-100">{formatDateDisplay(dateStr)}</p>
+        <p className="text-xl text-green-100">{formatDateDisplay(fileDate)}</p>
       </div>
 
       <div className="max-w-5xl mx-auto p-8">
@@ -59,7 +59,7 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             {synthesis ? 'Synthesis Summary' : 'Action Description'}
           </h2>
-          
+
           {/* 
             ============================================
             TODO: Add your description here
@@ -76,7 +76,7 @@ export default function DayPage() {
             - Recommendations
             ============================================
           */}
-          
+
           <p className="text-gray-500 italic p-4 bg-gray-50 rounded">
             [Developer - Add your description here]
           </p>
@@ -87,7 +87,7 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             👥 Developers Involved
           </h2>
-          
+
           {/* 
             ============================================
             TODO: Add developer names here
@@ -99,7 +99,7 @@ export default function DayPage() {
             - Alex Johnson
             ============================================
           */}
-          
+
           <ul className="space-y-2">
             <li className="text-gray-500 italic">
               [Developer 1 - Replace with your name]
@@ -115,10 +115,8 @@ export default function DayPage() {
 
         {/* SECTION 3: Images */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-4">
-            🖼️ Images
-          </h2>
-          
+          <h2 className="text-2xl font-bold text-green-800 mb-4">🖼️ Images</h2>
+
           {/* 
             ============================================
             TODO: Add images here
@@ -141,7 +139,7 @@ export default function DayPage() {
             </div>
             ============================================
           */}
-          
+
           <div className="p-4 bg-gray-50 rounded text-gray-500 italic">
             [Developer - Add image elements here]
           </div>
@@ -149,10 +147,8 @@ export default function DayPage() {
 
         {/* SECTION 4: Videos */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-4">
-            🎥 Videos
-          </h2>
-          
+          <h2 className="text-2xl font-bold text-green-800 mb-4">🎥 Videos</h2>
+
           {/* 
             ============================================
             TODO: Add videos here
@@ -174,7 +170,7 @@ export default function DayPage() {
             </div>
             ============================================
           */}
-          
+
           <div className="p-4 bg-gray-50 rounded text-gray-500 italic">
             [Developer - Add video elements here]
           </div>
@@ -185,7 +181,7 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             📊 Additional Information
           </h2>
-          
+
           {/* 
             ============================================
             TODO: Add any additional info
@@ -199,7 +195,7 @@ export default function DayPage() {
             - Code repositories
             ============================================
           */}
-          
+
           <div className="space-y-3">
             <p className="text-gray-500 italic">
               [Developer - Add any additional notes or metrics here]
@@ -210,7 +206,8 @@ export default function DayPage() {
         {/* Info Banner */}
         <div className="bg-green-50 border-2 border-green-200 rounded-lg p-4 text-center">
           <p className="text-green-800 text-sm">
-            ✏️ <strong>Edit this file directly:</strong> Replace the placeholders above with your own content. No UI forms needed!
+            ✏️ <strong>Edit this file directly:</strong> Replace the
+            placeholders above with your own content. No UI forms needed!
           </p>
         </div>
 
