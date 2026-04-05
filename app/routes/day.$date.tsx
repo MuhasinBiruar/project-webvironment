@@ -57,7 +57,7 @@ export default function DayPage() {
         {/* SECTION 1: Action Description / Synthesis Summary */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
-            {synthesis ? 'Synthesis Summary' : 'Action Description'}
+            Action Description
           </h2>
 
           {/* 
@@ -77,22 +77,30 @@ export default function DayPage() {
             ============================================
           */}
 
-          <p className="text-gray-500 italic p-4 bg-gray-50 rounded">
-            [Developer - Add your description here]
-          </p>
+          <div className="prose prose-green max-w-none">
+            <p className="text-gray-800 mb-4">{/* TODO: Add to me */}</p>
+            <p className="text-gray-800">
+              <strong>Challenges:</strong>
+              {/* TODO: Add to me */}
+            </p>
+            <p className="text-gray-800 mt-4">
+              <strong>Next Steps:</strong>
+              {/* TODO: Add to me */}
+            </p>
+          </div>
         </div>
 
-        {/* SECTION 2: Developers Involved */}
+        {/* SECTION 2: Member/s Involved */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
-            👥 Developers Involved
+            👥 Member/s Involved
           </h2>
 
           {/* 
             ============================================
-            TODO: Add developer names here
+            TODO: Add member names here
             
-            Format: List your names as developers working on this day
+            Format: List your names as members working on this day
             Example:
             - John Doe
             - Jane Smith
@@ -102,13 +110,13 @@ export default function DayPage() {
 
           <ul className="space-y-2">
             <li className="text-gray-500 italic">
-              [Developer 1 - Replace with your name]
+              [Member 1 - Replace with your name]
             </li>
             <li className="text-gray-500 italic">
-              [Developer 2 - Replace with your name]
+              [Member 2 - Replace with your name]
             </li>
             <li className="text-gray-500 italic">
-              [Developer 3 - Replace with your name]
+              [Member 3 - Replace with your name]
             </li>
           </ul>
         </div>
