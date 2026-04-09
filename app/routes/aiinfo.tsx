@@ -77,6 +77,35 @@ export default function AIInfoPage() {
                     </p>
                 </div>
             </div>
+
+            <div className="max-w-5xl mx-auto p-8">
+                <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+                    <h2 className="text-2xl font-bold text-green-800 mb-4">How to Achieve Sustainability</h2>
+                    <p className="text-gray-800 mb-4">
+                        It is clear that AI is here to stay; removing it is not an option. However, employing sustainable strategies can 
+                        help mitigate the dangers posed by AI data centers. One move suggests efficiency of both energy and resources. Efficient strategies reduce emissions and reduce costs, 
+                        thereby reducing water consumption (How to Make AI Data Centres More Sustainable, 2026). 
+                    </p>
+                    <p className="text-gray-800 mb-4">
+                        Another is to employ new renewable technologies. Large-scale battery energy storage systems (BESS) represent innovations 
+                        that enable reliable power delivery from renewable sources. These systems achieve this by integrating renewable generation 
+                        with consistent AI workloads. In addition to this, hybrid renewable energy sources are also viewed as a potential power source for 
+                        these data centers. Pairing solar with wind power yields more consistent energy; wind output often rises as solar drops in the 
+                        evening. Advanced energy management systems dynamically 
+                        optimize this mix based on availability and demand (De Hoop Scheffer – Senior Director Data Center Energy Lead, 2025).  
+                    </p>
+                    <p className="text-gray-800 mb-4">
+                        Another way is to continue the development of smarter chips and AI. For instance, Nvidia's superchip can boost performance and 
+                        perform AI computations while consuming up to 25 times less energy. Tests suggest that AI tasks were faster and needed far less 
+                        electricity. Optimizing AI operations by designing smaller, task-specific models. This approach effectively reduced unnecessary 
+                        computations, enabling lower power consumption without sacrificing accuracy or speed. According to Evans and Gao (2026), Google's 
+                        DeepMind AI has achieved significant energy efficiency improvements in data centers by using machine learning to optimize 
+                        environmental controls. By proactively adjusting cooling and window settings in real time to maintain continuous, precise temperature 
+                        control, 
+                        the system has reduced cooling energy consumption by up to 40 percent, underscoring AI's potential for sustainable operations.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }
