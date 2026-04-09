@@ -154,8 +154,8 @@ export default function DayPage() {
               <strong>Time Spent:</strong> ~2-3 minutes
             </p>
             <p className="text-gray-800">
-              <strong>Type of Activity:</strong> Environmental cleanliness /
-              waste management
+              <strong>Type of Task:</strong> Environmental maintenance /
+              cleanliness
             </p>
             <p className="text-gray-800">
               <strong>Notes:</strong> Demonstrates initiative and responsibility
