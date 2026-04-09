@@ -105,7 +105,7 @@ export default function DayPage() {
               We are all in this together, and we can all make a difference if we all do our part. So let us all do our part and let us all help each other to create a more positive environment for everyone.
             </p>
             <p className="text-gray-800">
-              <strong>Challenges:</strong> None
+              <strong>Challenges:</strong> March 16 does not have any content since we formally started our project on March 17. Aside from this, March 16 was a non-working holiday, so the members were our with their families.
             </p>
           </div>
         </div>
