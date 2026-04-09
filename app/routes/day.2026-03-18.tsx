@@ -1,8 +1,6 @@
-// day.2026-03-23.tsx
-
 import { Link } from 'react-router';
 import { Image } from 'primereact/image';
-import img1 from '~/images/2026-03-23/1.jpg';
+import img1 from '~/images/2026-03-18/1.jpg';
 import { addDates } from '~/util/addDates';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
@@ -75,7 +73,7 @@ export default function DayPage() {
 
           <div className="prose prose-green max-w-none">
             <p className="text-gray-800 mb-4">
-              Picked up a discarded biscuit wrapper found in a classroom and
+              I picked up a discarded biscuit wrapper found in a classroom and
               properly disposed of it in the trash. This small action
               contributed to maintaining cleanliness and promoting a more
               responsible and environmentally conscious workspace.
@@ -129,7 +127,7 @@ export default function DayPage() {
 
           <div className="p-4 bg-gray-50 rounded text-gray-500 italic">
             <video controls>
-              <source src="/videos/2026-03-23/1.mp4" type="video/mp4" />
+              <source src="/videos/2026-03-18/1.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

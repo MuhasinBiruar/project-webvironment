@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 import { Image } from 'primereact/image';
 import { addDates } from '~/util/addDates';
-import img1 from '~/images/2026-03-24/1.jpg';
+import img1 from '~/images/2026-03-19/1.jpg';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
 
@@ -84,8 +84,6 @@ export default function DayPage() {
               I took the initiative to properly dispose of it by segregating its
               components. The plastic lid and straw were separated from the
               paper cup body and placed into their respective waste categories.
-              This small action contributes to maintaining cleanliness in the
-              classroom and reinforces proper waste management practices.
             </p>
             <p className="text-gray-800">
               <strong>Challenges:</strong> There were no major challenges
@@ -138,7 +136,7 @@ export default function DayPage() {
 
           <div className="p-4 flex justify-center items-center bg-gray-50 rounded text-gray-500 italic">
             <video controls>
-              <source src="/videos/2026-03-24/1.mp4" type="video/mp4" />
+              <source src="/videos/2026-03-19/1.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

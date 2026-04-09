@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 import { addDates } from '~/util/addDates';
 import { Image } from 'primereact/image';
-import img1 from '~/images/2026-03-25/1.jpg';
+import img1 from '~/images/2026-03-20/1.jpg';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
 
@@ -151,7 +151,7 @@ export default function DayPage() {
 
           <div className="p-4 flex justify-center items-center bg-gray-50 rounded text-gray-500 italic">
             <video controls>
-              <source src="/videos/2026-03-25/1.mp4" type="video/mp4" />
+              <source src="/videos/2026-03-20/1.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
