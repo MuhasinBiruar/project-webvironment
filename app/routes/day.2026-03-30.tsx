@@ -77,16 +77,17 @@ export default function DayPage() {
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             Action Description
           </h2>
+          On this day I found another set of trash in the classroom. I picked them up and threw them in the trash can. I also segregated the trash into its respective bins.
 
           <div className="prose prose-green max-w-none">
             <p className="text-gray-800 mb-4">
 
             </p>
             <p className="text-gray-800">
-              <strong>Challenges:</strong>
+              <strong>Challenges:</strong> For me it is kind of a struggle to think of what other actions can I do from this one, especially with the fact that my classes are upto night from monday to thursday, which gives me little time to do other actions. I also find it hard to think of what other actions can I do that is related to this one, since I have already done the action of throwing trash and segregating it, which are the most common actions that can be done in this situation. Aside from this no challenges were encountered since I am already used to doing this kind of actions, and I am also used to doing this kind of actions in my daily life, so it is not really a big deal for me to do this kind of actions.
             </p>
             <p className="text-gray-800 mt-4">
-              <strong>Next Steps:</strong>
+              <strong>Next Steps:</strong> I will continue to do this kind of actions in my daily life, and I will also try to think of other actions that I can do that is related to this one.
             </p>
           </div>
         </div>
@@ -158,9 +159,7 @@ export default function DayPage() {
               cleanliness
             </p>
             <p className="text-gray-800">
-              <strong>Notes:</strong> Demonstrates initiative and responsibility
-              in maintaining a clean and organized classroom environment through
-              proper waste segregation.
+              <strong>Notes:</strong> No notes for this day, since I have already done this kind of actions in my daily life, so it is not really a big deal for me to do this kind of actions.
             </p>
           </div>
         </div>
