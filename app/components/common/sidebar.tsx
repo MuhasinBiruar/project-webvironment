@@ -11,7 +11,7 @@ export default function SideBar() {
         <>
             <Sidebar visible={visible} onHide={() => setVisible(false)}>
                 <div className="flex flex-col gap-6">
-                    <h2 className="font-bold">Informations</h2>
+                    <h2 className="font-bold">Blog Posts</h2>
                     <Link
                         to="/aiinfo"
                         className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
