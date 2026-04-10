@@ -1,6 +1,8 @@
 import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 import { addDates } from '~/util/addDates';
+import { Image } from 'primereact/image';
+import img1 from '~/images/2026-03-26/1big.jpg';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
 
@@ -117,8 +119,7 @@ export default function DayPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">🖼️ Images</h2>
 
-          {/* 
-            ============================================
+          {/* ============================================
             TODO: Add images here
             
             You can use:
@@ -140,11 +141,16 @@ export default function DayPage() {
             ============================================
           */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <figure>
-
-                <img src="app\images\2025-03-26\668310824_2119588785555688_2479259747728022559_n.jpg" alt="fuhhh" />
-                <figcaption className="text-sm text-gray-600 mt-2">Trash of two people</figcaption>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
+              <figure className="flex flex-col items-center">
+                <Image 
+                  src={img1}
+                  alt="fuhhh"
+                  className="hover:brightness-50 transition-all cursor-pointer"
+                  width="100%"
+                  preview 
+                />
+                <figcaption className="text-sm text-gray-600 mt-3">Trash of two people</figcaption>
               </figure>
             </div>
 
