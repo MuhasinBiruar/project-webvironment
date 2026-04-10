@@ -10,22 +10,31 @@ export default function SideBar() {
     return (
         <>
             <Sidebar visible={visible} onHide={() => setVisible(false)}>
-                <div className="flex flex-col gap-6">
-                    <h2 className="font-bold">Blog Posts</h2>
-                    <Link
-                        to="/aiinfo"
-                        className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
-                    >
-                        How AI impacts our environment
-                    </Link>
-                </div>
+                    <div className="flex flex-col gap-2 p-6">                                    
+                    <div className="flex flex-col gap-4">
+                        <h2 className="font-bold text-xl text-green-800">Blog Posts</h2>
+                        <Link
+                            to="/aiinfo"
+                            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
+                        >
+                            How AI impacts our environment
+                        </Link>
+                    </div>
 
+                    <div className="flex flex-col gap-4">
+                        <Link
+                            to="/blog_climatechange"
+                            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition">
+                            Why We Can't Just "Plant More Trees"
+                        </Link>
+                    </div>
+                </div>
             </Sidebar>
             <footer className="fixed bottom-0 left-0 right-0 bg-white/0 border-t border-gray-200/0 p-4 shadow-lg">
                 <Button
                     icon="pi pi-arrow-right"
                     onClick={() => setVisible(true)}
-                    label="->"
+                    label="Blog Posts —>"
                     className="p-button-success"
                 />
             </footer>
