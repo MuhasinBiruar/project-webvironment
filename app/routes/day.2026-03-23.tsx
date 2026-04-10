@@ -1,9 +1,3 @@
-// TEMPLATE
-
-// COPY THIS TEMPLATE AND CUSTOMIZE IT TO YOUR LIKING FOR EACH DAY'S ENTRY.
-// JUST MAKE SURE TO UPDATE THE FILENAME TO MATCH THE DATE (e.g., day.2026-03-16.tsx)
-// AND FILL IN THE SECTIONS BELOW WITH YOUR CONTENT.
-
 import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 import { addDates } from '~/util/addDates';
@@ -80,34 +74,16 @@ export default function DayPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             Action Description
-          </h2>
-
-          {/* 
-            ============================================
-            TODO: Add your description here
-            
-            Replace this comment with:
-            - What was accomplished today
-            - Challenges faced
-            - Progress made
-            - Next steps
-            
-            For Synthesis Days:
-            - Key findings from the week
-            - Team discussion outcomes
-            - Recommendations
-            ============================================
-          */}
-
+          </h2>During this online class week, I was able to clean and organize my room, clearing out accumulated clutter and properly sorting through the waste that had piled up over time.
           <div className="prose prose-green max-w-none">
-            <p className="text-gray-800 mb-4">{/* TODO: Add to me */}</p>
+            <p className="text-gray-800 mb-4"></p>
             <p className="text-gray-800">
               <strong>Challenges:</strong>
-              {/* TODO: Add to me */}
+              It was surprising how much trash two people can generate, just the sheer volume of it made the cleanup take longer and require more effort than initially expected.
             </p>
             <p className="text-gray-800 mt-4">
               <strong>Next Steps:</strong>
-              {/* TODO: Add to me */}
+              Continue maintaining the cleanliness of the room by disposing of waste regularly, and carry this same discipline into managing the study space for more focused and productive online classes going forward.
             </p>
           </div>
         </div>
@@ -132,13 +108,7 @@ export default function DayPage() {
 
           <ul className="space-y-2">
             <li className="text-gray-500 italic">
-              [Member 1 - Replace with your name]
-            </li>
-            <li className="text-gray-500 italic">
-              [Member 2 - Replace with your name]
-            </li>
-            <li className="text-gray-500 italic">
-              [Member 3 - Replace with your name]
+              Lloyd Joshua M. Matobato
             </li>
           </ul>
         </div>
@@ -170,41 +140,37 @@ export default function DayPage() {
             ============================================
           */}
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <figure>
+
+                <img src="app\images\2025-03-23\668310824_2119588785555688_2479259747728022559_n.jpg" alt="fuhhh" />
+                <figcaption className="text-sm text-gray-600 mt-2">Trash of two people</figcaption>
+              </figure>
+            </div>
+
           <div className="p-4 bg-gray-50 rounded text-gray-500 italic">
-            [Developer - Add image elements here]
           </div>
         </div>
 
         {/* SECTION 4: Videos */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-4">🎥 Videos</h2>
+          <h2 className="text-2xl font-bold text-green-800 mb-4">
+            🎥 Videos
+          </h2>
 
-          {/* 
-            ============================================
-            TODO: Add videos here
-            
-            You can use:
-            1. HTML5 video: <video controls width="100%"><source src="..." type="video/mp4" /></video>
-            2. YouTube embed: <iframe width="100%" height="400" src="https://www.youtube.com/embed/..." title="..."></iframe>
-            3. Vimeo or other platforms
-            
-            Example:
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold text-green-800 mb-2">Demo Video</h3>
-                <video controls width="100%" className="rounded-lg">
-                  <source src="/videos/demo.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold text-green-800 mb-3">Calendar Walkthrough & Day Page Template</h3>
+              <div className="bg-gray-800 p-8 rounded-lg h-64 flex items-center justify-center text-gray-400">
+                <div className="text-center">
+                  <span className="text-6xl block mb-4">▶️</span>
+                  <p>Video: No video for this day</p>
+                </div>
               </div>
             </div>
-            ============================================
-          */}
-
-          <div className="p-4 bg-gray-50 rounded text-gray-500 italic">
-            [Developer - Add video elements here]
           </div>
         </div>
+
 
         {/* SECTION 5: Key Metrics / Notes */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
@@ -212,23 +178,15 @@ export default function DayPage() {
             📊 Additional Information
           </h2>
 
-          {/* 
-            ============================================
-            TODO: Add any additional info
-            
-            Examples:
-            - Time spent on tasks
-            - Performance metrics
-            - Bug fixes
-            - Features implemented
-            - Links to documentation
-            - Code repositories
-            ============================================
-          */}
-
           <div className="space-y-3">
-            <p className="text-gray-500 italic">
-              [Developer - Add any additional notes or metrics here]
+            <p className="text-gray-800">
+              <strong>Time Spent:</strong> ~10-15 minutes
+            </p>
+            <p className="text-gray-800">
+              <strong>Type of Task:</strong> Cleanliness / Self - Discipline
+            </p>
+            <p className="text-gray-800">
+              <strong>Notes:</strong> I need to be more mindful of the waste I make. I should also be more disciplined in regularly cleaning and organizing my space to prevent the accumulation of clutter and maintain a conducive environment for my online classes.
             </p>
           </div>
         </div>
