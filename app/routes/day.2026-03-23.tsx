@@ -102,7 +102,7 @@ export default function DayPage() {
             👥 Member/s Involved
           </h2>
           <ul className="space-y-2">
-            <li className="text-gray-800 font-semibold">Carl Jovit M Garzon</li>
+            <li className="text-gray-800 font-semibold">Carl Jovit Garzon</li>
             <li className="text-gray-800 font-semibold">Lloyd Joshua Matobato</li>
             <li className="text-gray-800 font-semibold">Albert Geoff Buison</li>
           </ul>
@@ -112,7 +112,7 @@ export default function DayPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             🖼️ Images
-          </h2>s
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-6 justify-center items-center">
             <figure className="flex flex-col items-center">
               <Image
@@ -121,7 +121,7 @@ export default function DayPage() {
                 width="500" 
                 preview
               />
-              <figcaption className="text-sm text-gray-600 mt-3">Inside Evening Bus</figcaption>
+              <figcaption className="text-sm text-gray-600 mt-3">"FND" Fat Night Dinner</figcaption>
             </figure>
           </div>
         </div>
