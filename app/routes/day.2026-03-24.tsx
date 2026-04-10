@@ -87,7 +87,10 @@ export default function DayPage() {
 
           <div className="prose prose-green max-w-none">
             <p className="text-gray-800 mb-4">
-              For this day, I'm showcasing my commute using the DC Bus and why I try to catch it whenever possible. Choosing public transportation over riding a private vehicle or booking a ride-hailing service is one of the most practical ways to reduce individual carbon footprints. A single fully loaded bus takes dozens of cars off the road, which drastically cuts down on traffic congestion and greenhouse gas emissions in the city. 
+              For this day, I'm showcasing how I navigate using the DC Bus and why I try to catch it whenever possible. Since I had online classes this afternoon today, I didn't have my usual school commute, but I still had to run some errands to get supplies. Thankfully, there are two buses routed right around my barangay. 
+            </p>
+            <p className="text-gray-800 mb-4">
+            Choosing public transportation over riding a private vehicle or booking a ride-hailing service is one of the most practical ways to reduce individual carbon footprints. A single fully loaded bus takes dozens of cars off the road, which drastically cuts down on traffic congestion and greenhouse gas emissions in the city.
             </p>
             <p className="text-gray-800">
               <strong>Challenges:</strong> The biggest hurdle right now is dealing with the unpredictable schedule and lack of proper infrastructure. Taking the bus requires a lot of extra buffer time and patience since you never quite know exactly when it will arrive.
@@ -116,12 +119,12 @@ export default function DayPage() {
             🖼️ Images
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
             <figure className="flex flex-col items-center">
               <Image
                 src={img2}
                 className="hover:brightness-50 transition-all cursor-pointer"
-                width="100%"
+                width="600"
                 preview
               />
               <figcaption className="text-sm text-gray-600 mt-3">Morning Bus</figcaption>
@@ -131,20 +134,10 @@ export default function DayPage() {
               <Image
                 src={img3}
                 className="hover:brightness-50 transition-all cursor-pointer"
-                width="100%"
+                width="600"
                 preview
               />
               <figcaption className="text-sm text-gray-600 mt-3">Inside Morning Bus</figcaption>
-            </figure>
-
-            <figure className="flex flex-col items-center">
-              <Image
-                src={img1}
-                className="hover:brightness-50 transition-all cursor-pointer"
-                width="100%"
-                preview
-              />
-              <figcaption className="text-sm text-gray-600 mt-3">Inside Evening Bus</figcaption>
             </figure>
           </div>
         </div>

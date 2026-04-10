@@ -83,8 +83,11 @@ export default function DayPage() {
             Action Description
           </h2>
           <div className="prose prose-green max-w-none">
+           <p className="text-gray-800 mb-4">
+              Since we had online classes today, I headed over to a friend's house to attend lectures and hang out for the afternoon. Once we logged off, instead of ordering takeout, we decided to pool our resources and cook a shared group dinner. We made a hearty curry for four.
+            </p>
             <p className="text-gray-800 mb-4">
-              Today, instead of ordering takeout, we decided to pool our resources and cook a shared group dinner at a friend's house. We made a hearty curry for four, we've nicknamed it "FND" (Fat Night Dinner) We used a convenient curry base paired with fresh carrots and potatoes, but I believe the most impactful choice was repurposing leftover meat as our main protein. We actively prevented food waste by giving these leftovers a delicious second life, while also simultaneously avoiding the single-use plastics and transportation emissions associated with ordering delivery.
+              We have officially nicknamed this new tradition "FND" (Fat Night Dinner). We used a convenient curry base paired with fresh carrots and potatoes. However, I believe the most impactful choice was repurposing leftover meat as our main protein. We actively prevented food waste by giving these leftovers a delicious second life. This decision also helped us completely avoid the single-use plastics and transportation emissions associated with ordering delivery.
             </p>
             <p className="text-gray-800">
               <strong>Challenges:</strong> Balancing the proportions was a fun challenge, we had to make sure the amount of fresh vegetables and curry base paired perfectly with the specific amount of leftover meat we had on hand, ensuring absolutely nothing went to waste.
@@ -153,7 +156,7 @@ export default function DayPage() {
             <div>
               <h3 className="font-semibold text-green-800 mb-2">Environmental Stewardship</h3>
               <p className="text-gray-800">
-                To be completely honest, our group usually just eats out or orders food online most of the time. But this time, we decided to step up and put our cooking skills to the test. With a bit of guidance from our friend who actually knows their way around a kitchen, we made it happen. It made me realize that being an environmental steward isn't always about grand gestures. Just by choosing to cook together instead of tapping a delivery app, we completely bypassed the mountain of single-use plastics that usually clutters our trash, and saved a bit of money in the process.
+                To be completely honest, our group usually just eats out or orders food online most of the time (And honestly it would have been more convenient since we had online classes!). But this time, we decided to step up and put our cooking skills to the test. With a bit of guidance from our friend who actually knows their way around a kitchen, we made it happen. It made me realize that being an environmental steward isn't always about grand gestures. Just by choosing to cook together instead of tapping a delivery app, we completely bypassed the mountain of single-use plastics that usually clutters our trash, and saved a bit of money in the process.
               </p>
             </div>
             <div>
