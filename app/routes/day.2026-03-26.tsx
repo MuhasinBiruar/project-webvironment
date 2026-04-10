@@ -143,7 +143,7 @@ export default function DayPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <figure>
 
-                <img src="app\images\2025-03-23\668310824_2119588785555688_2479259747728022559_n.jpg" alt="fuhhh" />
+                <img src="app\images\2025-03-26\668310824_2119588785555688_2479259747728022559_n.jpg" alt="fuhhh" />
                 <figcaption className="text-sm text-gray-600 mt-2">Trash of two people</figcaption>
               </figure>
             </div>
