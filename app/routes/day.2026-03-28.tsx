@@ -161,7 +161,7 @@ Looking back, this week's actions were small but deliberate. We cooked a group m
             ============================================
           */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 justify-center items-center">
               <figure className="flex flex-col items-center">
                 <Image 
                   src={img1}
@@ -170,7 +170,7 @@ Looking back, this week's actions were small but deliberate. We cooked a group m
                   width="100%"
                   preview 
                 />
-                <figcaption className="text-sm text-gray-600 mt-3">Scratch Paper Trash</figcaption>
+                <figcaption className="text-sm text-gray-600 mt-3">Group Discussion</figcaption>
               </figure>
             </div>
 
