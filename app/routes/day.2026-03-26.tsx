@@ -140,7 +140,7 @@ export default function DayPage() {
             ============================================
           */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 justify-center items-center">
               <figure className="flex flex-col items-center">
                 <Image 
                   src={img1}

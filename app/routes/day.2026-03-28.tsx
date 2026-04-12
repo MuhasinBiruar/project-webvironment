@@ -1,6 +1,8 @@
 import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 import { addDates } from '~/util/addDates';
+import { Image } from 'primereact/image';
+import img1 from '~/images/2026-03-28/image.png';
 
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
 
@@ -114,8 +116,20 @@ Looking back, this week's actions were small but deliberate. We cooked a group m
           */}
 
           <ul className="space-y-2">
-            <li className="text-gray-500 italic">
+            <li className="text-gray-800">
               Lloyd Joshua M. Matobato
+            </li>
+            <li className="text-gray-800">
+              Muhaisin Xavier Biruar
+            </li>
+            <li className="text-gray-800">
+              Carl Jovit Garzon
+            </li>
+            <li className="text-gray-800">
+              Cyril John Cole
+            </li>
+            <li className="text-gray-800">
+              Albert Geoff Buison
             </li>
           </ul>
         </div>
@@ -147,11 +161,16 @@ Looking back, this week's actions were small but deliberate. We cooked a group m
             ============================================
           */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <figure>
-
-                {/* <img src="app\images\2025-03-23\668310824_2119588785555688_2479259747728022559_n.jpg" alt="fuhhh" /> */}
-                <figcaption className="text-sm text-gray-600 mt-2">Trash of two people</figcaption>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
+              <figure className="flex flex-col items-center">
+                <Image 
+                  src={img1}
+                  alt="fuhhh"
+                  className="hover:brightness-50 transition-all cursor-pointer"
+                  width="100%"
+                  preview 
+                />
+                <figcaption className="text-sm text-gray-600 mt-3">Scratch Paper Trash</figcaption>
               </figure>
             </div>
 
@@ -193,7 +212,7 @@ Looking back, this week's actions were small but deliberate. We cooked a group m
               <strong>Type of Task:</strong> Cleanliness / Self - Discipline
             </p>
             <p className="text-gray-800">
-              <strong>Notes:</strong> I need to be more mindful of the waste I make. I should also be more disciplined in regularly cleaning and organizing my space to prevent the accumulation of clutter and maintain a conducive environment for my online classes.
+              <strong>Notes:</strong> None. Most of the day was spent together with the family for the Maundy Thursday celebrations, so there wasn't much time for additional tasks or reflections outside of our group check-in. The focus was really on taking a moment to pause, reflect, and connect with each other after a busy week of online classes and advocacy actions.
             </p>
           </div>
         </div>
