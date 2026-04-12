@@ -27,6 +27,8 @@ export default function AIInfoPage() {
                 </Link>
                 <h1 className="text-4xl font-bold mb-2">How AI Impacts Our Environment</h1>
                 <p className="text-xl text-green-100">Understanding the relationship between artificial intelligence and sustainability</p>
+                <h4 className="text-lg text-green-250 mt-2">By: Muhaisin Xavier E. Biruar</h4>
+                <span className="text-sm text-green-250">April 1, 2026</span>
             </div>
 
             <div className="max-w-5xl mx-auto p-8">

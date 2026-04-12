@@ -24,6 +24,8 @@ export default function ScaleOfClimateChangePage() {
                 </Link>
                 <h1 className="text-4xl font-bold mb-2">Why We Can't Just "Plant More Trees"</h1>
                 <p className="text-xl text-green-100">Understanding the true mathematical scale of climate change and carbon sinks.</p>
+                <h4 className="text-lg text-green-250 mt-2">By: Jovit Garzon</h4>
+                <span className="text-sm text-green-250">April 2, 2026</span>
             </div>
 
             <div className="max-w-5xl mx-auto p-8">
