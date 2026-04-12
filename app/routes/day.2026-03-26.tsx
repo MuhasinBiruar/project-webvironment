@@ -81,11 +81,11 @@ export default function DayPage() {
             <p className="text-gray-800 mb-4"></p>
             <p className="text-gray-800">
               <strong>Challenges:</strong>
-              It was surprising how much trash two people can generate, just the sheer volume of it made the cleanup take longer and require more effort than initially expected.
+               It was surprising how much trash two people can generate, just the sheer volume of it made the cleanup take longer and require more effort than initially expected.
             </p>
             <p className="text-gray-800 mt-4">
               <strong>Next Steps:</strong>
-              Continue maintaining the cleanliness of the room by disposing of waste regularly, and carry this same discipline into managing the study space for more focused and productive online classes going forward.
+               Continue maintaining the cleanliness of the room by disposing of waste regularly, and carry this same discipline into managing the study space for more focused and productive online classes going forward.
             </p>
           </div>
         </div>
@@ -109,10 +109,9 @@ export default function DayPage() {
           */}
 
           <ul className="space-y-2">
-            <li className="text-gray-500 italic">
-              Lloyd Joshua M. Matobato
-            </li>
+            <li className="text-gray-800 font-semibold">Lloyd Joshua M. Matobato</li>
           </ul>
+
         </div>
 
         {/* SECTION 3: Images */}

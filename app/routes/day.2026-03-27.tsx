@@ -74,16 +74,16 @@ export default function DayPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             Action Description
-          </h2>During this online class week, I was able to clean and organize my room, clearing out accumulated clutter and properly sorting through the waste that had piled up over time.
+          </h2>In the spirit of discipline, I resolved myself to finally throw away the scratch papers I've been "saving" to use them for later. When in reality, I feel like its just my hoarding problem and the "potential man" of what could have been done with the papers.
           <div className="prose prose-green max-w-none">
             <p className="text-gray-800 mb-4"></p>
             <p className="text-gray-800">
-              <strong>Challenges:</strong>
-              It was surprising how much trash two people can generate, just the sheer volume of it made the cleanup take longer and require more effort than initially expected.
+              <strong>Challenges: </strong>
+              None
             </p>
             <p className="text-gray-800 mt-4">
-              <strong>Next Steps:</strong>
-              Continue maintaining the cleanliness of the room by disposing of waste regularly, and carry this same discipline into managing the study space for more focused and productive online classes going forward.
+              <strong>Next Steps: </strong>
+              Keep up my pace in maintaining cleanliness and organization in my room, and be more mindful of the waste I create to prevent unnecessary clutter in the future.
             </p>
           </div>
         </div>
@@ -143,8 +143,8 @@ export default function DayPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <figure>
 
-                {/* <img src="app\images\2026-03-23\1big.jpg" alt="fuhhh" /> */}
-                <figcaption className="text-sm text-gray-600 mt-2">Trash of two people</figcaption>
+                {/* <img src="app\images\2026-03-27\image.jpg" alt="fuhhh" /> */}
+                <figcaption className="text-sm text-gray-600 mt-2">Unused Papers / Scratch Papers</figcaption>
               </figure>
             </div>
 
@@ -180,13 +180,13 @@ export default function DayPage() {
 
           <div className="space-y-3">
             <p className="text-gray-800">
-              <strong>Time Spent:</strong> ~10-15 minutes
+              <strong>Time Spent:</strong> ~20-30 minutes
             </p>
             <p className="text-gray-800">
               <strong>Type of Task:</strong> Cleanliness / Self - Discipline
             </p>
             <p className="text-gray-800">
-              <strong>Notes:</strong> I need to be more mindful of the waste I make. I should also be more disciplined in regularly cleaning and organizing my space to prevent the accumulation of clutter and maintain a conducive environment for my online classes.
+              <strong>Notes:</strong> It gave me a nice pause in my routine, and, just emphasized the importance of regular cleaning, even if minute, in one's space.
             </p>
           </div>
         </div>
