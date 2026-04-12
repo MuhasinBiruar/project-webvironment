@@ -151,7 +151,7 @@ export default function DayPage() {
                   width="100%"
                   preview 
                 />
-                <figcaption className="text-sm text-gray-600 mt-3">Trash of two people</figcaption>
+                <figcaption className="text-sm text-gray-600 mt-3">Scratch Paper Trash</figcaption>
               </figure>
             </div>
 

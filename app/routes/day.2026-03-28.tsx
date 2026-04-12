@@ -74,16 +74,23 @@ export default function DayPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             Action Description
-          </h2>During this online class week, I was able to clean and organize my room, clearing out accumulated clutter and properly sorting through the waste that had piled up over time.
+          </h2>Since today is Maundy Thursday, there were no classes, giving us a rare, unhurried pause in what had otherwise been a very packed online class week. Rather than letting the holiday go entirely undocumented, the group made time to hop on a Discord call to reflect on everything we had done over the past few days and check in with one another. It was a low-key but meaningful moment, five people, each coming from their own corners of the week, gathering virtually to talk about what we had learned and where we wanted to go next.
+
+Looking back, this week's actions were small but deliberate. We cooked a group meal from leftovers to cut down on food waste and delivery emissions, took the public bus for errands instead of defaulting to ride-hailing, tended to indoor plants as a quiet act of daily care, cleaned and sorted through accumulated room waste, and even tackled the deeply personal challenge of letting go of hoarded scratch paper. None of these were grand gestures, but that was kind of the point.
+
           <div className="prose prose-green max-w-none">
             <p className="text-gray-800 mb-4"></p>
             <p className="text-gray-800">
-              <strong>Challenges:</strong>
-              It was surprising how much trash two people can generate, just the sheer volume of it made the cleanup take longer and require more effort than initially expected.
+              <strong>Key Findings from the Week: </strong>
+              This week made one thing very clear: environmental stewardship doesn't have to be grand to be meaningful. Across five days of online classes, the group carried out a range of small but deliberate actions, cooking a shared meal from leftovers to cut down on food waste, taking the public bus instead of ride-hailing apps, watering and tending to indoor plants, clearing out and properly sorting accumulated room waste, and even confronting the surprisingly personal habit of hoarding scratch paper. Each action, taken on its own, might seem insignificant, but together they paint a picture of a group that is slowly but genuinely building environmental awareness into their everyday routines. The week also reinforced how much waste two people living together can unconsciously generate, and how conscious consumption starts with simply paying attention.
             </p>
             <p className="text-gray-800 mt-4">
-              <strong>Next Steps:</strong>
-              Continue maintaining the cleanliness of the room by disposing of waste regularly, and carry this same discipline into managing the study space for more focused and productive online classes going forward.
+              <strong>Group Meeting: </strong>
+              During our check-in this Maundy Thursday, the team reflected on the week and agreed that the most valuable takeaway wasn't any single action, but the shift in mindset that's starting to take root. We're becoming more observant, noticing the trash we generate, the choices we make when commuting, the food we almost let go to waste. The group also acknowledged that a busy academic schedule is a real barrier to consistency, and that it's okay for our actions to be small as long as they are intentional. The holiday gave us a moment to breathe and recognize that even in a week as hectic as this one, we still showed up for the advocacy.
+            </p>
+            <p className="text-gray-800 mt-4">
+              <strong>Recommendations: </strong>
+              Moving forward, the team recommends establishing more consistent personal routines around waste management and mindful consumption, rather than relying on one-off cleanup sessions. Members are also encouraged to document their actions more proactively throughout the week, so that synthesis days feel less like a scramble and more like a genuine reflection. Lastly, as Holy Week continues, the break presents a good opportunity to observe household habits more closely, consumption, waste, energy use, and come back after the holiday with fresh observations and renewed momentum for the weeks ahead.
             </p>
           </div>
         </div>
