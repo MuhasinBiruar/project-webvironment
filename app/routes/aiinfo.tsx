@@ -2,6 +2,7 @@
 import { Link } from 'react-router';
 import { Image } from 'primereact/image';
 import img1 from '~/images/Blog/1.jpg';
+import img2 from '~/images/Blog/2.jpg';
 export function meta() {
     return [
         { title: 'How AI Impacts Our Environment - WebVironment' },
@@ -12,7 +13,8 @@ export function meta() {
     ];
 }
 const link = "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fblogs.microsoft.com%2Fblog%2F2025%2F09%2F18%2Finside-the-worlds-most-powerful-ai-datacenter%2F&ved=0CBkQjhxqFwoTCLio5qnA4JMDFQAAAAAdAAAAABAI&opi=89978449";
-
+const link2 = "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.investopedia.com%2Fhow-data-centers-are-draining-water-resources-11738978&opi=89978449"
+const link3 = "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
 export default function AIInfoPage() {
     return (
         <div className="min-h-screen bg-linear-to-br from-green-50 to-emerald-50">
@@ -68,6 +70,15 @@ export default function AIInfoPage() {
                         (a past version of the LLM from OpenAI) used around 1287 MWh of electricity during a single training cycle (Herrera et al., 2025).
                         This shows that AI's footprint is already significant and continues to grow each year (Leon, 2024).
                     </p>
+                    <figure className="flex flex-col items-center mb-4">
+                        <Image
+                            src={img2}
+                            className="hover:brightness-50 transition-all cursor-pointer"
+                            width="400"
+                            preview
+                        />
+                        <figcaption className="text-sm text-gray-600 mt-3"><a href={link2} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Credit: Pierre Moutot and Christophe Thalabot/AFP via Getty Images</a></figcaption>
+                    </figure>
                     <p className="text-gray-800 mb-4">
                         The water use of AI data centers also contributes to water quality degradation, as they can concentrate dust and
                         minerals after use, requiring wastewater treatment or disposal and potentially contributing to pollution (Yañez-Barnuevo, 2025).
@@ -104,6 +115,43 @@ export default function AIInfoPage() {
                         control, 
                         the system has reduced cooling energy consumption by up to 40 percent, underscoring AI's potential for sustainable operations.
                     </p>
+                    <p>Today, closed loops are being implemented to further enhance the efficiency and sustainability of AI data centers. Learn more: <a href={link3} target="_blank" rel="noopener noreferrer" className=" hover:text-blue-800 underline">Microsoft Blog: Sustainable by Design</a></p>
+                </div>
+
+                <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+                    <h2 className="text-2xl font-bold text-green-800 mb-4">References</h2>
+                    <ul className="space-y-4 list-none list-inside text-gray-800">
+                        <li>
+                            De Hoop Scheffer – Senior Director Data Center Energy Lead, W. (2025, November 25). Renewable energy for AI data centers: A complete guide. Hanwha Data Centers. <a href="https://www.hanwhadatacenters.com/blog/renewable-energy-for-ai-data-centers-a-complete-guide/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.hanwhadatacenters.com/blog/renewable-energy-for-ai-data-centers-a-complete-guide/</a>
+                        </li>
+                        <li>
+                            Evans, R., & Gao, J. (2026, March 11). DeepMind AI reduces Google data centre cooling bill by 40%. Google DeepMind. <a href="https://deepmind.google/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://deepmind.google/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/</a>
+                        </li>
+                        <li>
+                            Herrera, M., Xie, X., Menapace, A., Zanfei, A., & Brentan, B. M. (2025). Sustainable AI infrastructure: A scenario-based forecast of water footprint under uncertainty. Journal of Cleaner Production, 526, 146528. <a href="https://doi.org/10.1016/j.jclepro.2025.146528" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://doi.org/10.1016/j.jclepro.2025.146528</a>
+                        </li>
+                        <li>
+                            IEA (2025), Energy and AI, IEA, Paris <a href="https://www.iea.org/reports/energy-and-ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.iea.org/reports/energy-and-ai</a>, Licence: CC BY 4.0
+                        </li>
+                        <li>
+                            How to make AI data centres more sustainable. (2026, January 26). UN Environment Programme. <a href="https://www.unep.org/technical-highlight/how-make-ai-data-centres-more-sustainable" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.unep.org/technical-highlight/how-make-ai-data-centres-more-sustainable</a>
+                        </li>
+                        <li>
+                            Jonker, A., & Gomstyn, A. (2025, November 17). AI data center. What is an AI data center? <a href="https://www.ibm.com/think/topics/ai-data-center" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.ibm.com/think/topics/ai-data-center</a>
+                        </li>
+                        <li>
+                            Kumar, S. (2025, September 28). 7 Ways to Reduce AI data center power & water use by 40%. Medium. <a href="https://medium.com/@meisshaily/7-ways-to-reduce-ai-data-center-power-water-use-by-40-d8fb6c80697e" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://medium.com/@meisshaily/7-ways-to-reduce-ai-data-center-power-water-use-by-40-d8fb6c80697e</a>
+                        </li>
+                        <li>
+                            Leon, M. (2024). The escalating AI's energy demands and the imperative need for sustainable solutions. <a href="https://www.sciencedirect.com/science/article/pii/S0959652625018785#bb40" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.sciencedirect.com/science/article/pii/S0959652625018785#bb40</a>
+                        </li>
+                        <li>
+                            Tittel, J. (2026, March 15). The AI data center boom is the next environmental crisis and it's already starting • The Jersey. The Jersey Vindicator. <a href="https://jerseyvindicator.org/2026/03/15/the-ai-data-center-boom-is-the-next-environmental-crisis-and-its-already-starting/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://jerseyvindicator.org/2026/03/15/the-ai-data-center-boom-is-the-next-environmental-crisis-and-its-already-starting/</a>
+                        </li>
+                        <li>
+                            Yañez-Barnuevo, M. (2025, June 25). Data centers and water consumption. <a href="https://www.eesi.org/articles/view/data-centers-and-water-consumption" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.eesi.org/articles/view/data-centers-and-water-consumption</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
