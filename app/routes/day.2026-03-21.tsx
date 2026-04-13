@@ -2,11 +2,8 @@ import { useParams, Link } from 'react-router';
 import type { Route } from './+types/day.$date';
 import { Image } from 'primereact/image';
 import { addDates } from '~/util/addDates';
-import img1 from '../images/Mar17/1.jpg';
-import img2 from '../images/Mar17/2.jpg';
-import img3 from '~/images/2026-03-18/1.jpg';
-import img4 from '~/images/2026-03-19/1.jpg';
-import img5 from '~/images/2026-03-20/1.jpg';
+import img1 from '~/images/2026-03-21/1.png';
+
 const fileDate = import.meta.url.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '';
 
 export function meta({ params }: Route.MetaArgs) {
@@ -105,7 +102,7 @@ export default function DayPage() {
               We are all in this together, and we can all make a difference if we all do our part. So let us all do our part and let us all help each other to create a more positive environment for everyone.
             </p>
             <p className="text-gray-800">
-              <strong>Challenges:</strong> March 16 does not have any content since we formally started our project on March 17. Aside from this, March 16 was a non-working holiday, so the members were our with their families.
+              <strong>Challenges:</strong> March 16 does not have any content since we formally started our project on March 17. Aside from this, March 16 was a non-working holiday, so the members were out with their families.
             </p>
           </div>
         </div>
@@ -132,67 +129,15 @@ export default function DayPage() {
               <Image
                 src={img1}
                 className="hover:brightness-50 transition-all cursor-pointer"
-                width="200"
+                width="720"
                 preview
               />
+              <figcaption className="text-sm text-gray-600 mt-3">Meeting</figcaption>
 
             </figure>
-            <figure className="flex flex-col items-center">
-              <Image
-                src={img2}
-                className="hover:brightness-50 transition-all cursor-pointer"
-                width="200"
-                preview
-              />
-
-            </figure>
-            <figure className="flex flex-col items-center">
-              <Image
-                src={img3}
-                className="hover:brightness-50 transition-all cursor-pointer"
-                width="200"
-                preview
-              />
-
-            </figure>
-            <figure className="flex flex-col items-center">
-              <Image
-                src={img4}
-                className="hover:brightness-50 transition-all cursor-pointer"
-                width="200"
-                preview
-              />
-
-            </figure>
-            <figure className="flex flex-col items-center">
-              <Image
-                src={img5}
-                className="hover:brightness-50 transition-all cursor-pointer"
-                width="200"
-                preview
-              />
-
-            </figure>
+            
           </div>
         </div>
-
-        {/* SECTION 4: Videos */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-4">🎥 Videos</h2>
-
-          <div className="p-4 bg-gray-50 rounded text-gray-500 italic space-y-2 flex flex-row justify-center items-center flex-wrap gap-4">
-            <video controls style={{ width: '300px', height: '200px' }}>
-              <source src="/videos/2026-03-18/1.mp4" type="video/mp4" />
-            </video>
-            <video controls style={{ width: '300px', height: '360px' }}>
-              <source src="/videos/2026-03-19/1.mp4" type="video/mp4" />
-            </video>
-            <video controls style={{ width: '300px', height: '360px' }}>
-              <source src="/videos/2026-03-20/1.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-
         
 
         {/* ===== EDIT ABOVE THIS LINE ===== */}
