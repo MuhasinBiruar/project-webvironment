@@ -76,10 +76,7 @@ export default function DayPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-green-800 mb-4">
             Action Description
-          </h2>Since today is Maundy Thursday, there were no classes, giving us a rare, unhurried pause in what had otherwise been a very packed online class week. Rather than letting the holiday go entirely undocumented, the group made time to hop on a Discord call to reflect on everything we had done over the past few days and check in with one another. It was a low-key but meaningful moment, five people, each coming from their own corners of the week, gathering virtually to talk about what we had learned and where we wanted to go next.
-
-Looking back, this week's actions were small but deliberate. We cooked a group meal from leftovers to cut down on food waste and delivery emissions, took the public bus for errands instead of defaulting to ride-hailing, tended to indoor plants as a quiet act of daily care, cleaned and sorted through accumulated room waste, and even tackled the deeply personal challenge of letting go of hoarded scratch paper. None of these were grand gestures, but that was kind of the point.
-
+          </h2>Since today is Black Saturday, the last solemn day of Holy Week, there were no classes, giving the group a quiet moment to pause and reflect on a week that, despite being fully online, turned out to be surprisingly productive in terms of our environmental stewardship advocacy. Over the past few days, the members carried out a range of personal actions, from cooking a shared meal out of repurposed leftovers, riding the public bus for errands, tending to indoor plants, clearing out and sorting accumulated room waste, all the way to something as small but telling as finally throwing away a pile of hoarded scratch paper. The solemnity of the holiday gave us the breathing room to look back at the week as a whole and appreciate that even amid a packed class schedule, we still found ways to show up for the cause.
           <div className="prose prose-green max-w-none">
             <p className="text-gray-800 mb-4"></p>
             <p className="text-gray-800">
@@ -88,7 +85,7 @@ Looking back, this week's actions were small but deliberate. We cooked a group m
             </p>
             <p className="text-gray-800 mt-4">
               <strong>Group Meeting: </strong>
-              During our check-in this Maundy Thursday, the team reflected on the week and agreed that the most valuable takeaway wasn't any single action, but the shift in mindset that's starting to take root. We're becoming more observant, noticing the trash we generate, the choices we make when commuting, the food we almost let go to waste. The group also acknowledged that a busy academic schedule is a real barrier to consistency, and that it's okay for our actions to be small as long as they are intentional. The holiday gave us a moment to breathe and recognize that even in a week as hectic as this one, we still showed up for the advocacy.
+              During our check-in this Black Friday, the team reflected on the week and agreed that the most valuable takeaway wasn't any single action, but the shift in mindset that's starting to take root. We're becoming more observant, noticing the trash we generate, the choices we make when commuting, the food we almost let go to waste. The group also acknowledged that a busy academic schedule is a real barrier to consistency, and that it's okay for our actions to be small as long as they are intentional. The holiday gave us a moment to breathe and recognize that even in a week as hectic as this one, we still showed up for the advocacy.
             </p>
             <p className="text-gray-800 mt-4">
               <strong>Recommendations: </strong>
